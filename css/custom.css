@@ -1,0 +1,211 @@
+
+/*classess start*/
+.flt_left{
+  float: left;
+}
+/*.flower
+{
+      width: 79%;
+    background-color: brown;
+    height: 79px;
+    position: relative;
+}
+.flower::before
+{
+  position: absolute;
+  content: url('../img/left_arrow.png');
+}*/
+.box_shdow{
+  border-radius: 12px;
+   
+        box-shadow: 5px 10px 14px 0px #dfc0c0;
+    margin-bottom: 8px;
+    border: 1px solid #c1c1c1;
+
+}
+.input_width{
+      width: 94%;
+    border: white;
+}
+.margin_bottom_0px{
+  margin-bottom:0px;
+}
+.margin_20px{
+      padding : 20px 0px 20px 0px;
+}
+.margin_15px{
+      margin : 15px 0px 15px 0px;
+}
+.text_left
+{
+  text-align: left;
+}
+.margin_0_auto
+{
+  margin: 0 auto;
+}
+/*.margin_left20px{
+      margin-left: 20px;
+}*/
+#create_paper input{
+    margin-left: 20px;
+}
+#create_paper select{
+    margin-left: 20px;
+}
+.mcqs_background
+{
+  background-image: url("../img/paper.jpg"); /* The image used */
+
+ /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 200px;
+}
+.my_heading{
+  background-color: brown;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 19px;
+    box-shadow: 5px 10px 14px 0px #a52a2a;
+}
+}
+/*#mcqs
+{
+  background-image: url("../img/backgroung_img.jpg"); /* The image used */
+
+ /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}*/
+/*#mcqs{
+   background-image: url("../img/wood.jpg"); /* The image used */
+
+ /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}*/
+.flt_right{
+  float: right;
+}
+.txt_align{
+  text-align: center;
+}
+.my_button{
+  width: 30x;
+    /* padding: 6px; */
+    padding: 5px 21px 8px 22px;
+    background-color: brown;
+    color: white;
+    /* text-align: center; */
+    box-shadow: 2px red;
+    /* box-shadow: 12px 15px red; */
+    box-sizing: 10px 10px 10px 10px red;
+    /* box-shadow: 11px 4px 14px 4px #cdc1c1; */
+    /* margin-bottom: 31px; */
+    box-shadow: 5px 10px 14px 0px #a52a2a;
+    border-radius: 9px;
+    border: transparent;
+}
+.my_button:hover{
+  transition: 3s; 
+      background-color: black; 
+}
+/*classess end*/
+#marquee {
+	background-color: brown;
+    color: white;
+    padding-top: 5px;
+}
+#header .navbar-brand img {
+ 
+  transition: transform .8s;
+}
+#header  .navbar-brand img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.3); 
+}
+
+.user_img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.user_img {
+ 
+  transition: transform .8s;
+}
+
+#header .bg-light {
+    background-color: transparent !important;
+}
+#header ul li a:hover{
+  background-color: brown;
+  color:white;
+
+  position: relative;
+
+}
+#header{
+  border-bottom: 5px solid red;
+}
+#header ul li a:hover::before{
+ content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 15px solid brown;
+    /* margin: 0px; */
+    top: 36px;
+    position: absolute;
+    left: 54px;
+    right: 0;
+}
+
+#header ul li{
+ 
+  
+  width: 128px;
+    
+    margin: 2px;
+    text-align: center;
+}
+#header ul li a{
+ /* font-size: 20px;*/
+   /* font-weight: 700;*/
+    font-family: sans-serif;
+    color: black;
+}
+
+#header ul li .dropdown-item:hover::before {
+    content: "";
+    border-top: 16px solid brown;
+    /* margin: 0px; */
+    top: 28px;
+   
+    left: 67px;
+    
+}
+
+
+
+/*edit_profile start*/
+#edit_profile ul li{
+  list-style: none;
+}
+
+  
+/*edit_profile end*/
+/*past_paper  start*/
+#past_paper td
+{
+      width: 158px;
+
+}
+/*past_paper end*/

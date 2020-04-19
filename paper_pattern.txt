@@ -1,0 +1,81 @@
+
+
+<table>
+				
+				
+				<div>
+					<tr>
+					<td><?php echo 	$count.". ".$mcqs;?></td>
+				</tr>
+				<tr>
+					<td><input type="radio" value="A"><?php echo $option_a;?></td>
+
+				</tr>
+				<tr>
+					<td><input type="radio" value="B"><?php echo $option_b;?></td>
+
+				</tr>
+				<tr>
+					<td><input type="radio" value="C"><?php echo $option_c;?></td>
+
+				</tr>
+				<tr>
+					<td><input type="radio" value="D"><?php echo $option_d;?></td>
+
+				</tr>
+			
+				</div>
+				
+			</table>
+
+<?php
+		$count_correct_key=0;
+       if(isset($_POST['submit']))
+    {
+      $mcqs=$_POST['mcqs'];
+      
+      $long_question=$_POST['long_question'];
+      $short_question=$_POST['short_question'];
+      $subject=$_POST['subject'];
+       $mcqs_query="SELECT  `correct_answer` FROM `msqs`
+        WHERE `subject`='$subject' order by rand() limit 5 ";
+        $run_1=mysqli_query($conn, $mcqs_query);
+       // $mcqs_data=mysqli_fetch_assoc($run_1);
+        $count=0;
+        $best_answer="Choose the best answer.";
+       
+        while( $mcqs_data=mysqli_fetch_assoc($run_1))
+       	
+       	{
+       		
+       		$count_correct_key++;
+
+        	$correct_answer=$mcqs_data['correct_answer'];
+          	?>
+			<table>
+				
+				
+				
+				<tr>
+					<td><?php echo 	$count_correct_key.". ".$correct_answer;?></td>
+				</tr>
+			</table>
+          	<?php
+       	}
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
